@@ -1,4 +1,4 @@
-FROM node:14.3-slim
+FROM node
 
 ADD . /src
 
