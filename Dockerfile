@@ -2,7 +2,7 @@ FROM node
 
 ADD . /src
 
-VALUMES /src
+VOLUME [ "/src" ]
 
 WORKDIR /src
 
