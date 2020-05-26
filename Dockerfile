@@ -10,4 +10,4 @@ RUN nmp install
 
 CMD ["node","app.js"]
 
-EXPORT 9999 
+EXPOSE 9999 
