@@ -1,13 +1,14 @@
 FROM node:slim
 
-ADD . /src
+#환경변수 설정
+ENV name=admin
 
-VOLUME /src
+ADD . /src
 
 WORKDIR /src
 
 RUN npm install
 
-CMD ["node","app.js"]
+CMD [ "node","app.js" ]
 
-EXPOSE 9999 
+EXPOSE 9999

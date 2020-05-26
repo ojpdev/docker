@@ -10,7 +10,8 @@ app.get("/",(req,res,next) =>{
     let param = url.parse(req.url,true).query;
     //res.writeHead(200,{"Content-type":"char=euckr"})
     
-    console.log(param.test);
+    if(param != undefined)
+      console.log(param.test);
 
     fs.readFile("./test.txt",(err,data) => {
       res.write(data);
