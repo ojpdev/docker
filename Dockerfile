@@ -6,7 +6,7 @@ VOLUME [ "/src" ]
 
 WORKDIR /src
 
-RUN nmp install
+RUN npm install
 
 CMD ["node","app.js"]
 
