@@ -6,20 +6,36 @@ const app = express();
 
 app.get("/",(req,res,next) =>{
 
+    let result = [];
 
     let param = url.parse(req.url,true).query;
-    //res.writeHead(200,{"Content-type":"char=euckr"})
+    //res.writeHead(200,{"Content-type":"text/html;charset=utf-8"})
     
     if(param != undefined)
       console.log(param.test);
 
+      result.push({
+        "name":"ad홍min",
+        "age":30
+      });
+
+      result.push({
+        "name":"ad2min",
+        "age":30
+      });
+
     fs.readFile("./test.txt",(err,data) => {
-      res.write(data);
-      res.write("하이");
+      // res.write(data);
+      // res.write("하이");
+      
+      res.json(result);
       res.end();
     });
 
 });
+
+// http://localhost:9999
+
 
 
 
