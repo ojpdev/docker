@@ -10,6 +10,10 @@ app.get("/",(req,res,next) =>{
 
     let param = url.parse(req.url,true).query;
     //res.writeHead(200,{"Content-type":"text/html;charset=utf-8"})
+
+    if(process.env.name != undefined && process.env.name != null){
+      console.log("환경변수 name : " + process.env.name);
+    }
     
     if(param != undefined)
       console.log(param.test);

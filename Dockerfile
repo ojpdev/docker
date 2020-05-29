@@ -1,7 +1,7 @@
 FROM node:slim
 
 #환경변수 설정
-ENV name=admin
+ENV name = admin
 
 ADD . /src
 
