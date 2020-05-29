@@ -25,7 +25,7 @@ app.get("/", (req, res, next) => {
 
   if (process.env.name != undefined && process.env.name != null) {
     result.push({
-      "name": "ad2min",
+      "name": process.env.name,
       "age": 30
     });
   }
