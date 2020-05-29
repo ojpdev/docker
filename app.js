@@ -23,7 +23,9 @@ app.get("/", (req, res, next) => {
     "age": 30
   });
 
-  if (process.env.name != undefined && process.env.name != null) {
+  if (process.env.name != undefined 
+    && process.env.name != null
+    && process.env.name != "") {
     result.push({
       "name": process.env.name,
       "age": 30
