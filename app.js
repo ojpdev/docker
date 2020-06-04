@@ -19,7 +19,7 @@ app.get("/", (req, res, next) => {
     console.log(param.test);
 
   result.push({
-    "name": "ad홍min",
+    "name": "admin",
     "age": 30
   });
 
